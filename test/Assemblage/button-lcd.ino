@@ -17,7 +17,7 @@ void loop()
 {
     start();
 
-    // Début boucle
+    buttonPush();
 }
 
 void start()
