@@ -14,11 +14,11 @@ void loop()
   lcd.setCursor(0, 0)
   lcd.print("Arduino");
   lcd.setCursor(2, 1);
-  lcd.print("GetStarted.com")
+  lcd.print("GetStarted.com");
 
   lcd.clear();
   lcd.print("DIYables");
   lcd.setCursor(0, 1);
-  lcd.print("www.diyables.io")
+  lcd.print("www.diyables.io");
   delay(2000);
 }

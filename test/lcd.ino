@@ -11,8 +11,8 @@ void setup()
 void loop()
 {
   lcd.clear();
-  lcd.setCursor(0, 0)
+  lcd.setCursor(0, 0);
   lcd.print("Mesure courant");
   lcd.setCursor(2, 1);
-  lcd.print("Projet BTS 2023")
+  lcd.print("Projet BTS 2023");
 }
