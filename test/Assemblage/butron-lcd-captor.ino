@@ -1,7 +1,8 @@
+
 #include <LiquidCrystal_I2C.h>
 LiquidCrystal_I2C lcd(0x27, 16, 2);
-const int buttonPin = A2;
-
+const char buttonPin = A2;
+char Demarrage;      // Boucle demarrage
 int buttonState = 1; // Button définit à l'état 1
 
 void setup()
@@ -11,54 +12,10 @@ void setup()
     lcd.backlight();
 
     pinMode(buttonPin, INPUT);
-    Serial.begin(9600);
 }
 
-void loop()
+void measureStart()
 {
-    start();
-
-
-    buttonState = digitalRead(buttonPin);
-
-    //Si l'état du boutton === 0 alors il fais la mesure tout de suite
-    if (buttonState == LOW)
-    {
-
-        Measure();
-    } else {
-
-        Measure();
-    }
-
-    delay(10000);
-
-}
-
-void start()
-{
-
-    // Démarrage système
-    lcd.clear();
-    lcd.setCursor(0, 0)
-        lcd.print("Projet BTS");
-    lcd.setCursor(2, 1);
-    lcd.print("2023");
-
-    lcd.clear();
-    lcd.print("Initialisation");
-    lcd.setCursor(0, 1);
-    lcd.print("...");
-    delay(2000);
-    lcd.clear();
-
-    break;
-}
-
-void Measure()
-{
-
-    lcd.clear();
 
     int adc = analogRead(A0);               // Définit pin de lecture sur le pin Analogique A0
     float voltage = adc * 5 / 1023.0;       // Converti la tension
@@ -66,12 +23,100 @@ void Measure()
 
     // Envoie dans la console le courant et tension Toutes les 8s
 
-    // courant
+    // affichage écran
+    lcd.clear();
     lcd.print("Tension: ");
-    lcd.print(voltage)
-        lcd.setCursor(2, 1);
-    lcd.print("Intensité: ");
-    lcd.print(current);
+    lcd.print(voltage);
+    lcd.print("V");
 
-    delay(8000);
+    lcd.setCursor(0, 1);
+    lcd.print("Courant: ");
+    lcd.print(current);
+    lcd.print("A");
+}
+
+void measure()
+{
+
+    int adc = analogRead(A0);               // Définit pin de lecture sur le pin Analogique A0
+    float voltage = adc * 5 / 1023.0;       // Converti la tension
+    float current = (voltage - 2.5) / 0.40; // Converti le courant (Sensibilité 4OmA)
+
+    // Envoie dans la console le courant et tension Toutes les 8s
+
+    // affichage écran
+    lcd.clear();
+    lcd.print("Tension: ");
+    lcd.print(voltage);
+    lcd.print("V");
+
+    lcd.setCursor(0, 1);
+    lcd.print("Courant: ");
+    lcd.print(current);
+    lcd.print("A");
+}
+
+void start()
+{
+
+    // Démarrage système
+    lcd.clear();
+    lcd.setCursor(3, 0);
+    lcd.print("Projet BTS");
+
+    lcd.setCursor(3, 1);
+    lcd.print("2022/2023");
+
+    // Attente de 2s
+    delay(2000);
+
+    lcd.clear();
+    lcd.print("Initialisation");
+    lcd.setCursor(6, 1);
+
+    lcd.print(".");
+    delay(1000);
+    lcd.print(".");
+    delay(1000);
+    lcd.print(".");
+    delay(1000);
+
+    lcd.clear();
+    measureStart();
+}
+
+void loop()
+{
+
+    if (Demarrage == 0)
+    {
+
+        start();
+        Demarrage++;
+        Serial.print(Demarrage);
+    }
+
+    buttonState = digitalRead(buttonPin);
+
+    if (buttonState == LOW)
+    {
+
+        lcd.clear();
+        lcd.print("Mesure demande");
+
+        lcd.setCursor(0, 1);
+        lcd.print("Svp patientez");
+        delay(2000);
+
+        measure();
+        // Cooldown de 5000s
+        delay(5000);
+    }
+    else
+    {
+        measure();
+        //delay(20000);
+    }
+
+    
 }

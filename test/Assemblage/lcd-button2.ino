@@ -1,9 +1,10 @@
 
 #include <LiquidCrystal_I2C.h>
 LiquidCrystal_I2C lcd(0x27, 16, 2);
-const char buttonPin = A2;
-char Demarrage;
+const int buttonPin = A2;
+
 int buttonState = 1; // Button définit à l'état 1
+const int Demarrage = 0;
 
 void setup()
 {
@@ -59,15 +60,15 @@ void buttonPush()
 void loop()
 {
 
-    if (Demarrage == 0)
+    if (Demarrage <= 1)
     {
 
         start();
-        Demarrage++;
-        Serial.print(Demarrage);
+        Demarrage + 1;
     }
-
+    else
+    {
 
         buttonPush();
-  
+    }
 }
