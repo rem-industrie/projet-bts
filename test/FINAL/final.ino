@@ -1,8 +1,15 @@
+// importation librairy
 #include <LiquidCrystal_I2C.h>
+#include <SoftwareSerial.h>
+#include <Wire.h>
+
+// constante/paramétrage
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 const char buttonPin = A2;
-char Demarrage;      // Boucle demarrage
-int buttonState = 1; // Button définit à l'état 1
+char Demarrage;                  // Boucle demarrage
+int buttonState = 1;             // Button définit à l'état 1
+const int debit = 9600;          // Débit Tx
+SoftwareSerial mySerial(10, 11); // RX,TX redéfinit par la librairy
 
 void setup()
 {
@@ -10,8 +17,14 @@ void setup()
     lcd.init();
     lcd.backlight();
 
-    pinMode(buttonPin, INPUT);
+    pinMode(buttonPin, INPUT); // Entrée bouton
+
+    Serial.begin(debit);
+    mySerial.begin(debit);
+    Serial.println("Test communication RS232");
+    delay(1000);
 }
+
 
 void measure()
 {
@@ -32,6 +45,18 @@ void measure()
     lcd.print("Courant: ");
     lcd.print(current);
     lcd.print("A");
+
+    // Envoie passerelle
+
+    Serial.println("Envoie Courant sur la passerelle");
+
+    const int TxCurrent = "A";
+    const int TxVoltage = "V";
+
+    mySerial.println(current + TxCurrent); //Envoie du courant
+    mySerial.println(voltage + TxVoltage); //Envoie de la Tension
+
+    
 }
 
 void start()
@@ -66,7 +91,7 @@ void start()
 void loop()
 {
 
-    //Si le prototype n'a pas déja affiché le message de départ alors il fait le void start
+    // Si le prototype n'a pas déja affiché le message de départ alors il fait le void start
     if (Demarrage == 0)
     {
 
@@ -89,8 +114,5 @@ void loop()
 
         measure();
         delay(5000);
-
     }
-
 }
-// code fonctionnel mais pas de cooldown une fois affiché la valeur ne change pas sans appuie de bouton
