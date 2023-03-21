@@ -9,7 +9,7 @@ const char buttonPin = A2;
 char Demarrage;                  // Boucle demarrage
 int buttonState = 1;             // Button définit à l'état 1
 const int debit = 9600;          // Débit Tx
-SoftwareSerial mySerial(10, 11); // RX,TX redéfinit par la librairy
+SoftwareSerial mySerial(4,3); // RX,TX redéfinit par la librairy
 
 void setup()
 {
@@ -50,12 +50,16 @@ void measure()
 
     Serial.println("Envoie Courant sur la passerelle");
 
-    const int TxCurrent = "A";
-    const int TxVoltage = "V";
 
-    mySerial.println(current + TxCurrent); //Envoie du courant
-    mySerial.println(voltage + TxVoltage); //Envoie de la Tension
+    mySerial.println(current); //Envoie du courant
+    mySerial.println("A-");
+    //Console retour test uniquement
+    Serial.println(current);
 
+    mySerial.println(voltage); //Envoie du courant
+    mySerial.println("V");
+    //Console retour test uniquement
+    Serial.println(voltage);
     
 }
 
