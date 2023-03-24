@@ -33,7 +33,40 @@ void measure()
     float voltage = adc * 5 / 1023.0;       // Converti la tension
     float current = (voltage - 2.47) / 0.40; // Converti le courant (Sensibilité 4OmA)
 
+    if (current <= 0) { // Si le courant est inférieur ou égale à 0 il n'affiche que 0
+
     // Envoie dans la console le courant et tension Toutes les 8s
+
+    // affichage écran
+    lcd.clear();
+    lcd.print("Tension: ");
+    lcd.print(voltage);
+    lcd.print("V");
+
+    lcd.setCursor(0, 1);
+    lcd.print("Courant: ");
+    lcd.print("0A");
+
+    // Envoie passerelle
+
+    Serial.println("Envoie Courant sur la passerelle");
+
+
+    mySerial.println(current); //Envoie du courant
+    mySerial.println("0A-");
+
+    //Console retour test uniquement
+        Serial.println("0V");
+
+    mySerial.println(voltage); //Envoie du courant
+    mySerial.println("V");
+
+    //Console retour test uniquement
+        Serial.println(voltage);
+
+    } else {
+
+        // Envoie dans la console le courant et tension Toutes les 8s
 
     // affichage écran
     lcd.clear();
@@ -60,7 +93,8 @@ void measure()
     mySerial.println("V");
     //Console retour test uniquement
     Serial.println(voltage);
-    
+    }
+
 }
 
 void start()
