@@ -4,8 +4,6 @@ Problème sur le bouton
 il ne réagit que vers la fin du delay(2000);
 */
 
-
-
 #include <LiquidCrystal_I2C.h>
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 const char buttonPin = A2;
