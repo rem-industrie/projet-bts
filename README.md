@@ -20,7 +20,7 @@ Projet est crée avec:
 * Alimenté en +28V
 * Carte A4049 (capteur de courant)
 
-![ares](../DOC/schema/carte final/ARES.PNG)
+![ares](./DOC/schema/carte-final/ARES.PNG)
 	
 ## Setup
 To run this project, install it locally using npm:
