@@ -32,7 +32,7 @@ Projet est crée avec:
 ![ares](./DOC/schema/carte-final/ares.PNG)
 	
 ## Setup
-To run this project, install it locally using npm:
+Pour cloner le projet:
 
 ```
 gh repo clone rembot-industrie/projet-bts
