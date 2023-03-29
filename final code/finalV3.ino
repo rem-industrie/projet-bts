@@ -31,7 +31,7 @@ void measure()
 
     int adc = analogRead(A0);               // Définit pin de lecture sur le pin Analogique A0
     float voltage = adc * 5 / 1023.0;       // Converti la tension
-    float current = (voltage - 2.47) / 0.40; // Converti le courant (Sensibilité 4OmA)
+    float current = (voltage - 2.50) / 0.04; // Converti le courant (Sensibilité 4OmA)
 
     if (current <= 0) { // Si le courant est inférieur ou égale à 0 il n'affiche que 0
 
@@ -150,7 +150,8 @@ void loop()
         lcd.print("Svp patientez");
         delay(2000);
 
+        lcd.clear();
         measure();
         delay(5000);
     }
-}
+}X
