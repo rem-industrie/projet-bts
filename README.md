@@ -1,22 +1,28 @@
-## Table of contents
-* [General info](#general-info)
+## Projet bts
+## Contenu github
+* [Info General](#Info-General)
+* [Contenue](#Contenue)
 * [Technologies](#technologies)
 * [Setup](#setup)
 
-## General info
-This project is simple Lorem ipsum dolor generator.
+## Info General
+Ce projet consiste à capter le courant et une fois fais le renvoyer sur une passerelle MQTT envoyer en RS232.
+
+## Contenue
+Ce github contient:
+* Fichier stl et gcode
+* Fichier ARES ISIS
+* Documentation
 	
 ## Technologies
-Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
+Projet est crée avec:
+* Un arduino uno
+* Alimenté en +28V
+* Carte A4049 (capteur de courant)
 	
 ## Setup
 To run this project, install it locally using npm:
 
 ```
-$ cd ../lorem
-$ npm install
-$ npm start
+gh repo clone rembot-industrie/projet-bts
 ```
