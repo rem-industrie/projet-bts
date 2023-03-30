@@ -1,3 +1,7 @@
+![Projet](https://img.shields.io/badge/Projet-2023-brightgreen)
+![Captor](https://img.shields.io/badge/Captor-ASC724-orange)
+![Language](https://img.shields.io/badge/Language-C%2B%2B-orange)
+![Version](https://img.shields.io/badge/Version-V1-green)
 ## Projet bts
 ## Contenu github
 * [Info General](#Info-General)
