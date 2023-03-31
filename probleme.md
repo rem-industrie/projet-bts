@@ -1,6 +1,9 @@
 ## Projet bts
 ## Problème carte
 * [1. Court-circuit entre le VIN et le GND](#1.-Court-circuit-entre-le-VIN-et-le-GND)
+* [2. Sous alimentation VIN arduino](#2.-Sous-alimentation-VIN-arduino)
+* [3. Problème led TX](#3.-Problème-led-TXD)
+* [4. Problème SDA, SCL](#4.-Problème-SDA,-SCL)
 
 ## Phase de test
 Tableau utiliser pour le dépannage.
@@ -64,5 +67,14 @@ En regardant la led j'ai vu une soudure raté j'ai simplement mis un coup de cut
 - Supposition : Inversion conn du conn-arduino lors de la création du schéma structurelle.
 - Solution : Coupé les pistes et soudé des cables du connecteurs au pistes.
 
-![sda](./DOC/schema/probleme/SDA-SCL/IMG_3601.jpg)
+![scl](./DOC/schema/probleme/SDA-SCL/IMG_3601.jpg)
 ![scl](./DOC/schema/probleme/SDA-SCL/IMG_3602.jpg)
+
+Il y eu une inverssion de pins ce qui cause une panne problèmatique.
+
+## 5. Problème SDA, SCL
+
+- Problème : L'Afficheur à un mauvais contact
+- Solution : Ressouder le conn-arduino.
+- 
+![ledTx1](./DOC/schema/probleme/Conn-arduino/error-pins arduino.jpg)
