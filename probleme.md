@@ -4,7 +4,7 @@
 * [2. Sous alimentation VIN arduino](#2.-Sous-alimentation-VIN-arduino)
 * [3. Problème led TX](#3.-Problème-led-TXD)
 * [4. Problème SDA, SCL](#4.-Problème-SDA,-SCL)
-* [5. Problème SDA, SCL](5.-Problème-conn-arduino)
+* [5. Problème conn-arduino](5.-Problème-conn-arduino)
 
 ## Phase de test
 Tableau utiliser pour le dépannage.
@@ -19,6 +19,7 @@ Tableau utiliser pour le dépannage.
 |     LED RX   |  MOYEN |  Court-circuit entre entre les pin led | +5V  |
 | ALIM PRINCIPAL |       Ok       |               |      +28V     |
 | VIN |  IMPORTANT  | SOUS ALIMENTATION ARDUINO PONT DIVISEUR  |      +7.40V     |
+| CONN-ARDUINO |  MOYEN  | SOUDURE PINS  |          |
 
 ## 1. Court-circuit entre le VIN et le GND
 Lors de la mise en tension de la carte aucune led ne s'allume après plusieurs recherche il y avait un très léger filet d’étain entre le VIN et le GND comme sur la photo ci-dessous
