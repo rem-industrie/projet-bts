@@ -4,6 +4,7 @@
 * [2. Sous alimentation VIN arduino](#2.-Sous-alimentation-VIN-arduino)
 * [3. Problème led TX](#3.-Problème-led-TXD)
 * [4. Problème SDA, SCL](#4.-Problème-SDA,-SCL)
+* [5. Problème SDA, SCL](5.-Problème-conn-arduino)
 
 ## Phase de test
 Tableau utiliser pour le dépannage.
@@ -72,7 +73,7 @@ En regardant la led j'ai vu une soudure raté j'ai simplement mis un coup de cut
 
 Il y eu une inverssion de pins ce qui cause une panne problèmatique.
 
-## 5. Problème SDA, SCL
+## 5. Problème conn-arduino
 
 - Problème : L'Afficheur à un mauvais contact
 - Solution : Ressouder le conn-arduino.
