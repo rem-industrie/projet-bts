@@ -16,11 +16,12 @@
 Formule pour obtenir la Tension à partir du courant:
 - courant(A) x sensibilité(40mV)
 
-| Tension |  **Mesure Capteur**  |     Calcul     |
-|    :-----------     | :----------- | :------------: |
-|       +0V       |      +2,50        |     +0V    |
-|      +9V        | +2,51  |     +0,..V   |
-|      +15V       | +2,51V |   +0,..V  |
+| Tension         |  **Mesure Capteur(V)**  |  **Mesure Capteur(A)**  |     Calcul     |
+|    :----------- | :-----------          | :------------: | :------------: |
+|       +0V       |      +2,50            |     +0A     |     +0V   |
+|      +5V        | +2,50V                |   +0,07A     |     +0,028V   |
+|      +9V        | +2,51                 |     +0,25A   |     +0,1V   |
+|      +15V       | +2,51V                |   +0,31A     |     +0,124V   |
 
 
 ## 2. Mesure RS232
