@@ -6,12 +6,21 @@
 
 ## 1. Capteur ASC712
 
+|    Capteur    : |  |
+|    :-----------     | :----------- |
+| Tension ALIM |  +5V  |
+| Tension à vide| +2,50 |
+| Sensibilité | 40mV/A |
+| Marche d'erreur |±0.8%  |
+
 Formule pour obtenir la Tension à partir du courant:
-- courant(A) x sensibilité(40mA)
-| Tension |  **Mesure**  |     Calcul     |
+- courant(A) x sensibilité(40mV)
+
+| Tension |  **Mesure Capteur**  |     Calcul     |
 |    :-----------     | :----------- | :------------: |
-|      +9V        | CONN Capteur |       Ok       |
-|              |              |                |
+|       +0V       |      +2,50        |     +0V    |
+|      +9V        | +2,51  |     +0,..V   |
+|      +15V       | +2,51V |   +0,..V  |
 
 
 ## 2. Mesure RS232
