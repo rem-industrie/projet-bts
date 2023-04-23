@@ -29,12 +29,11 @@ Projet est crée avec:
 
 ## Schéma structurelle
 
-![schema1](./DOC/schema/Schema-structurelle/schema1.jpg)
+![schema1](https://user-images.githubusercontent.com/58986671/233845691-04cf3b82-d1df-4d34-a17b-ff8a3bd63d04.jpg)
 ![schema2](./DOC/schema/Schema-structurelle/schema2.jpg)
 
 ## Carte
-
-![ares](./DOC/schema/carte-final/ares.PNG)
+![ares](https://user-images.githubusercontent.com/58986671/233845704-d9a2506a-7939-46dc-897e-befa433f9fae.PNG)
 	
 ## Setup
 Pour cloner le projet:
