@@ -38,6 +38,8 @@ Projet est crée avec:
 ## Setup
 Pour cloner le projet:
 
+![projet bts](https://user-images.githubusercontent.com/58986671/233867285-5e28a3ba-8cb3-4fd2-9245-17f7e68f04d2.png)
+
 ```
 gh repo clone rembot-industrie/projet-bts
 ```
