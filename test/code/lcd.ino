@@ -11,7 +11,7 @@ void setup()
 void loop()
 {
   lcd.clear();
-  lcd.setCursor(0, 0)
+  lcd.setCursor(0, 0);
   lcd.print("Projet Bts");
   lcd.setCursor(2, 1);
   lcd.print("2022-2023");
