@@ -10,7 +10,7 @@
 * [Technologies](#technologies)
 * [Schéma structurelle](#Schéma-structurelle)
 * [Carte](#Carte)
- [organigramme](#organigramme)
+* [organigramme](#organigramme)
 * [Setup](#setup)
 
 ## Info General
