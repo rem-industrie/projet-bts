@@ -27,6 +27,7 @@ Formule pour obtenir la Tension à partir du courant:
 
 ## 2. Mesure RS232
 Ce projet consiste à capter le courant et une fois fais le renvoyer sur une passerelle MQTT envoyer en RS232.
+![mesure final test](https://user-images.githubusercontent.com/58986671/233841365-fdf63a05-1779-42c7-bfc0-981ae5bfedca.png)
 
 ## 3. Mesure autre
 
