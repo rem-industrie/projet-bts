@@ -1,32 +1,28 @@
-// importation librairy
-#include <LiquidCrystal_I2C.h>
-#include <SoftwareSerial.h>
-#include <Wire.h>
+bool test = false;
 
-// paramétrage
-
-const char buttonPin = A2;
-const int debit = 9600; // Débit Tx
-char Demarrage;         // Boucle demarrage
-char MesureLoop = 0;
-
-int buttonState = 1; // Button définit à l'état 1
-
-void setup()
-{
-    // Ecran initialisé
-    lcd.init();
-    lcd.backlight();
-
+void setup() {
+  // Initialisation de la broche du bouton en entrée
+  pinMode(boutonPin, INPUT_PULLUP);
     pinMode(buttonPin, INPUT); // Entrée bouton
-
-    delay(1000);
 }
 
-void loop()
-{
+void loop() {
+  
 
-    lcd.clear();
-    lcd.setCursor(3, 0);
-    lcd.print("Projet BTS");
+buttonState = digitalRead(buttonPin);
+
+
+  if (buttonState == HIGH) {
+
+    Serial.print("Boutton appuyer");
+    Serial.print(test);
+    test = true;
+
+  } else {
+
+    Serial.print("Relâcher");
+    Serial.print(test);
+    test = false;
+  }
+
 }

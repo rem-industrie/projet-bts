@@ -68,9 +68,6 @@ void measure()
     }
     else
     {
-
-        // Envoie dans la console le courant et tension Toutes les 8s
-
         // affichage écran
         lcd.clear();
         lcd.print("Tension: ");
