@@ -4,6 +4,7 @@
 * [1. Capteur ASC712](#1.-Capteur-ASC712)
 * [2. Mesure RS232](#2.-Mesure-RS232)
 * [3. Mesure autre](#3.-Mesure-autre)
+* [4. Test capteur](#4.Test-capteur)
 
 ## 1. Capteur ASC712
 
@@ -29,7 +30,8 @@ Formule pour obtenir la Tension à partir du courant:
 Ce projet consiste à capter le courant et une fois fais le renvoyer sur une passerelle MQTT envoyer en RS232.
 ![mesure final test](https://user-images.githubusercontent.com/58986671/233841365-fdf63a05-1779-42c7-bfc0-981ae5bfedca.png)
 
-## 3. Mesure autre
+
+
 
 
 - Regulateur
@@ -71,3 +73,16 @@ Ce projet consiste à capter le courant et une fois fais le renvoyer sur une pas
 |    +5 ard       |          +5V          |
 |   Alim-led      |        +2.10V         |
 |   led-led       |        +4.70V         |
+
+## 4. Test capteur
+
+| Nombre ampoule(s) 2W |  Nombre ampoule(s) 10W |  **Mesure Capteur(A)**   |     Calcul     |   Tensio(V)    |
+|    :-----------      | :-----------           | :------------:           | :------------: | :------------: |
+|         0            |            0           |     +0A                  |     +0V        |     +2.49V     |
+|         0            |            1           |     +0.80A               |     +0.8V      |     +2.52V     |
+|         0            |            2           |     +1.66A               |     +1.6V      |     +2.56V     |
+|         1            |            2           |     +1.90A               |     +1.84V     |     +2.57V     |
+|         2            |            2           |     +2.14A               |     +2.08V     |     +2.58V     |
+|         3            |            2           |     +2.39A               |     +2.32V     |     +2.59V     |
+
+Calcul: P / U
