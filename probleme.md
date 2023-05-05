@@ -78,5 +78,6 @@ Il y eu une inverssion de pins ce qui cause une panne problèmatique.
 
 - Problème : L'Afficheur à un mauvais contact
 - Solution : Ressouder le conn-arduino.
-- 
-![Uploading error-pins arduino.jpg…]()
+
+
+![error-pins arduino](https://user-images.githubusercontent.com/58986671/236393590-5f2ad396-e901-4e99-b7c4-1e7c668217d2.jpg)
