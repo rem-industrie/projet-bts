@@ -1,4 +1,5 @@
-![Projet](https://img.shields.io/badge/Projet-2023-brightgreen)
+**![Projet](https://img.shields.io/badge/Projet-2023-brightgreen*$
+²
 ![Captor](https://img.shields.io/badge/Captor-ASC724-orange)
 ![Version](https://img.shields.io/badge/Version-V1-green)
 ![Test](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)
@@ -10,6 +11,7 @@
 * [Schéma structurelle](#Schéma-structurelle)
 * [Carte](#Carte)
 * [organigramme](#organigramme)
+* [Boîtier 3D](#Boîtier-3D)
 * [Setup](#setup)
 
 ## Info General
@@ -40,6 +42,11 @@ Projet est crée avec:
 
 ## Setup
 Pour cloner le projet:
+
+* ## Boîtier 3D
+
+![1](https://user-images.githubusercontent.com/58986671/236392536-2d7a6b8f-0280-4786-b970-fa7e94bc6be2.png)
+![2](https://user-images.githubusercontent.com/58986671/236392549-3fc2088b-e647-444d-94a5-8693ed8d1d95.png)
 
 ```
 gh repo clone rembot-industrie/projet-bts
