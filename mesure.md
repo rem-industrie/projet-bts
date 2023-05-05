@@ -11,7 +11,7 @@
 |    Capteur    : |              |
 |  :-----------   | :----------- |
 |   Tension ALIM  |      +5V     |
-| Tension à vide  |     +2.50    |
+| Tension à vide  |     +2.50V   |
 |   Sensibilité   |     40mV/A   |
 | Marche d'erreur |     ±0.8%    |
 
