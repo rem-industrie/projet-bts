@@ -30,7 +30,7 @@ Projet est crée avec:
 
 ## Schéma structurelle
 
-![schema1](https://user-images.githubusercontent.com/58986671/233845691-04cf3b82-d1df-4d34-a17b-ff8a3bd63d04.jpg)
+![schema1](https://user-images.githubusercontent.com/58986671/236392995-dc8c188b-4dff-4fc5-a615-b8863d6e9205.png)
 ![schema2](./DOC/schema/Schema-structurelle/schema2.jpg)
 
 ## Carte
