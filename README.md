@@ -1,4 +1,4 @@
-**![Projet](https://img.shields.io/badge/Projet-2023-brightgreen)
+![Projet](https://img.shields.io/badge/Projet-2023-brightgreen)
 ![Captor](https://img.shields.io/badge/Captor-ASC724-orange)
 ![Version](https://img.shields.io/badge/Version-V1-green)
 ![Test](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)
