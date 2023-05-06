@@ -11,7 +11,7 @@
 |    Capteur    : |              |
 |  :-----------   | :----------- |
 |   Tension ALIM  |      +5V     |
-| Tension à vide  |     +2.50    |
+| Tension à vide  |     +2.50V   |
 |   Sensibilité   |     40mV/A   |
 | Marche d'erreur |     ±0.8%    |
 
@@ -76,7 +76,7 @@ Ce projet consiste à capter le courant et une fois fais le renvoyer sur une pas
 
 ## 4. Test capteur
 
-| Nombre ampoule(s) 2W |  Nombre ampoule(s) 10W |  **Mesure Capteur(A)**   |     Calcul     |   Tensio(V)    |
+| Nombre ampoule(s) 2W |  Nombre ampoule(s) 10W |  **Mesure Capteur(A)**   |     Calcul     |   Tension(V)   |
 |    :-----------      | :-----------           | :------------:           | :------------: | :------------: |
 |         0            |            0           |     +0A                  |     +0V        |     +2.49V     |
 |         0            |            1           |     +0.80A               |     +0.8V      |     +2.52V     |
