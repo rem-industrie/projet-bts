@@ -1,6 +1,6 @@
-const int buttonPin = 2;
+const char buttonPin = A2;
 
-int buttonState = 0;
+int buttonState = 1;
 
 void setup() {
 
@@ -12,7 +12,7 @@ void loop() {
   buttonState = digitalRead(buttonPin);
 
 
-  if (buttonState == HIGH) {
+  if (buttonState == LOW) {
 
     Serial.print("Boutton appuyer");
 

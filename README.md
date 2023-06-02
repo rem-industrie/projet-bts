@@ -19,7 +19,7 @@ Ce projet consiste à capter le courant et une fois fais le renvoyer sur une pas
 ## Contenue
 Ce github contient:
 * Fichier stl et gcode
-* Fichier ARES ISIS
+* Fichier ARES ISIS.
 * Documentation
 	
 ## Technologies
@@ -49,4 +49,5 @@ Pour cloner le projet:
 
 ```
 gh repo clone rembot-industrie/projet-bts
+
 ```
