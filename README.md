@@ -5,18 +5,18 @@
 ## Projet bts
 ## Contenu github
 * [Info General](#Info-General)
-* [Contenue](#Contenue)
+* [Contenu](#Contenu)
 * [Technologies](#technologies)
-* [Schéma structurelle](#Schéma-structurelle)
+* [Schéma structurel](#Schéma-structurel)
 * [Carte](#Carte)
 * [organigramme](#organigramme)
 * [Boîtier 3D](#Boîtier-3D)
 * [Setup](#setup)
 
 ## Info General
-Ce projet consiste à capter le courant et une fois fais le renvoyer sur une passerelle MQTT envoyer en RS232.
+Ce projet consiste à capter le courant et une fois fait le renvoyer sur une passerelle MQTT envoye en RS232.
 
-## Contenue
+## Contenu
 Ce github contient:
 * Fichier stl et gcode
 * Fichier ARES ISIS.
@@ -28,7 +28,7 @@ Projet est crée avec:
 * Alimenté en +28V
 * Carte A4049 (capteur de courant)
 
-## Schéma structurelle
+## Schéma structurel
 
 ![schema1](https://user-images.githubusercontent.com/58986671/236392995-dc8c188b-4dff-4fc5-a615-b8863d6e9205.png)
 ![schema2](./DOC/schema/Schema-structurelle/schema2.jpg)
