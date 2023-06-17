@@ -51,7 +51,7 @@ En calculant le pont diviseur du régulateur j'ai changé et j'obtiens du enviro
 Problème: La led tx ne s'allume pas.
 
 Lors de test la led tx ne s'allume pas.
-Pour la tester j'ai utiliser un gbf avec pour le dépanage
+Pour la tester j'ai utilisé un gbf avec pour le dépanage
 | **Fréquence**|   Volt (GPP)   |
 | :----------- | :------------: |
 |      10k     |      +5 V      |
